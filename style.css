@@ -108,11 +108,40 @@ img {
     display: none;
   }
 
-
   .container.grey {
     background-color: white;
   }
-  
-
-
 }
+
+/* Media query < 1080 */
+
+@media screen and (max-width: 1080px) and (min-width: 421px){
+
+  #steps>.row{
+    min-width: 100%;
+    background-color: #F2F2CD;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central{
+    width: 50%;
+  }
+
+  #steps .row>.right{
+    width: 70%;
+    margin: auto;
+    float: none;
+  }
+
+  #steps .row>.right>img{
+    margin-top: 50px;
+  }
+
+  #lezioni .row img, #why .row img{
+    border-radius: 0%;
+  }
+
+  .container.grey{
+    background-color: white;
+  }
+} 
